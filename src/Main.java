@@ -16,28 +16,27 @@ public class Main {
         service.addItem(new Item("Logitech Wireless Keyboard", "Keyboard", "Office Desk", 2026));
         service.addItem(new Item("Canon Inkjet Printer", "Printer", "Office Corner", 2029));
 
-
-        //           List<Product> products=service.getAllProducts();
-//            for (Product p:products){
+//      List<Item> items=service.getAllItems();
+//      for (Item i:items){
+//        System.out.println(i);
+//       }
 //
-//                System.out.println(p);
-//            }
+//      System.out.println("============================================");
 
-//            System.out.println("============================================");
-//            System.out.println("A Perticular Product");
-//             Product p=service.getProduct("Hp Mouse");
-//            System.out.println(p);
-
+//      System.out.println("Search items by items name");
+//      Item i=service.getItem("Hp Mouse");
+//      System.out.println(i);
 
         System.out.println("============================================");
-        System.out.println("A Perticular Text");
+
+        System.out.println("Search items using perticular text");
 
         List<Item> items2= service.getItemsByKeyword("white");
         for (Item item:items2){
-
             System.out.println(item);
         }
 
     }
 
 }
+

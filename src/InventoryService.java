@@ -16,10 +16,10 @@ public class InventoryService {
         for (Item i:items) {
             if (i.getName().equals(name))
                 return i;
-
         }
         return null;
     }
+
 
     public List<Item> getItemsByKeyword(String text) {
         String str=text.toLowerCase();
